@@ -2,7 +2,7 @@ FROM ubuntu:latest
 MAINTAINER Borodin Gregory <grihabor@mail.ru>
 
 RUN apt update \
- && apt install -y --no-cache \
+ && apt install -y \
         pandoc \
         make \
         python3 \
