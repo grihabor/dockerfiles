@@ -1,4 +1,4 @@
-FROM nvidia/cuda:8.0-cudnn7-runtime-ubuntu16.04
+FROM nvidia/cuda:9.0-cudnn7-runtime
 MAINTAINER Borodin Gregory <grihabor@mail.ru>
 
 RUN apt update \
@@ -10,7 +10,8 @@ RUN pip3 install --no-cache-dir \
 	numpy \
 	scipy \
         scikit-learn \
-        scikit-image
+        scikit-image \
+	pandas
 
 RUN pip3 install --no-cache-dir \
         tensorflow-gpu \
