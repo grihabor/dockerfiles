@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM alpine:latest
 MAINTAINER Borodin Gregory <grihabor@mail.ru>
 
 WORKDIR /server
