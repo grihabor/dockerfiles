@@ -1,8 +1,11 @@
-FROM ubuntu:latest
+FROM grihabor/sphinx.html:latest
 MAINTAINER Borodin Gregory <grihabor@mail.ru>
 
 RUN apt update \
- && apt install -y pandoc make python3 python3-pip texlive-full \
- && pip3 install sphinx
+ && apt install -y \
+        texlive-latex-recommended \
+        texlive-fonts-recommended \
+        texlive-latex-extra \
+        latexmk
 
 CMD ["/bin/bash"]
