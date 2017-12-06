@@ -7,6 +7,8 @@ RUN apt update \
         make \
         python3 \
         python3-pip \
- && pip3 install --no-cache-dir sphinx
+ && pip3 install --no-cache-dir \
+        sphinx \
+        sphinx_rtd_theme
 
 CMD ["/bin/bash"]
