@@ -10,6 +10,7 @@ RUN apt update \
 
 RUN pip3 install --no-cache-dir \
 	sphinx \
-	sphinxcontrib-napoleon
+	sphinxcontrib-napoleon \
+	sphinx_rtd_theme
 
 CMD ["/bin/bash"]
