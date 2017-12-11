@@ -1,4 +1,4 @@
-FROM grihabor/sphinx.html:latest
+FROM grihabor/sphinx:latest
 MAINTAINER Borodin Gregory <grihabor@mail.ru>
 
 RUN apt update \
